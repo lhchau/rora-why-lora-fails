@@ -127,11 +127,7 @@ paper/               the paper (PDF)
 
 ## Acknowledgements
 
-This code builds on [PSIM](https://github.com/shuaizhao95/PSIM) by Zhao et al., *Defending Against Weight-Poisoning
-Backdoor Attacks for Parameter-Efficient Fine-Tuning* (Findings of NAACL 2024). We reuse their weight-poisoning setup,
-their training and evaluation code, and their datasets. We thank the authors for releasing their code. If you use this
-repository, please cite their paper as well.
-
+This codebase is built on [PSIM](https://github.com/shuaizhao95/PSIM).
 LoRA, PiSSA, DoRA and OLoRA come from Hugging Face [PEFT](https://github.com/huggingface/peft).
 
 ## License
@@ -153,19 +149,6 @@ from [PSIM](https://github.com/shuaizhao95/PSIM) and remain under the terms of t
     url = "https://aclanthology.org/2026.findings-acl.1732/",
     doi = "10.18653/v1/2026.findings-acl.1732",
     pages = "34692--34705"
-}
-
-@inproceedings{zhao-etal-2024-defending,
-    title = "Defending Against Weight-Poisoning Backdoor Attacks for Parameter-Efficient Fine-Tuning",
-    author = "Zhao, Shuai and Gan, Leilei and Luu, Anh Tuan and Fu, Jie and Lyu, Lingjuan and Jia, Meihuizi and Wen, Jinming",
-    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {NAACL} 2024",
-    month = jun,
-    year = "2024",
-    address = "Mexico City, Mexico",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.findings-naacl.217/",
-    doi = "10.18653/v1/2024.findings-naacl.217",
-    pages = "3421--3438"
 }
 ```
 
