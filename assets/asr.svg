@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="312" viewBox="0 0 720 312" role="img" aria-labelledby="title desc">
+  <title id="title">Attack success rate after fine-tuning on clean data</title>
+  <desc id="desc">SST-2 with the BadNet trigger, from Table 2 of the paper. LoRA: BERT-large 99.70%, RoBERTa-large 99.74%, Llama-3.2-1B 100.0%. RoRA: BERT-large 7.48%, RoBERTa-large 6.49%, Llama-3.2-1B 2.31%.</desc>
+  <style>
+    svg { --surface: #fcfcfb; --border: rgba(11, 11, 11, 0.10); --ink: #0b0b0b; --ink2: #52514e; --muted: #898781; --grid: #e1e0d9; --base: #c3c2b7; --s1: #2a78d6; --s2: #eb6834; }
+    @media (prefers-color-scheme: dark) {
+      svg { --surface: #1a1a19; --border: rgba(255, 255, 255, 0.10); --ink: #f0efec; --ink2: #c3c2b7; --grid: #2c2c2a; --base: #383835; --s1: #3987e5; --s2: #d95926; }
+    }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .bg { fill: var(--surface); stroke: var(--border); }
+    .title { font-size: 16px; font-weight: 600; fill: var(--ink); }
+    .sub { font-size: 13px; fill: var(--ink2); }
+    .model { font-size: 14px; fill: var(--ink); text-anchor: end; }
+    .val { font-size: 13px; fill: var(--ink2); }
+    .tick { font-size: 12px; fill: var(--muted); text-anchor: middle; }
+    .grid { stroke: var(--grid); }
+    .base { stroke: var(--base); }
+    .s1 { fill: var(--s1); }
+    .s2 { fill: var(--s2); }
+  </style>
+
+  <rect class="bg" x="0.5" y="0.5" width="719" height="311" rx="12"/>
+  <text class="title" x="24" y="38">Attack success rate after fine-tuning on clean data</text>
+  <text class="sub" x="24" y="60">SST-2, BadNet trigger · lower is better · numbers from Table 2 of the paper</text>
+
+  <rect class="s1" x="24" y="78" width="12" height="12" rx="3"/>
+  <text class="sub" x="42" y="89">LoRA</text>
+  <rect class="s2" x="96" y="78" width="12" height="12" rx="3"/>
+  <text class="sub" x="114" y="89">RoRA (ours)</text>
+
+  <!-- x axis: 0-100 % mapped to x = 160 + 4.6 * value -->
+  <g stroke-width="1">
+    <line class="grid" x1="275" y1="108" x2="275" y2="272"/>
+    <line class="grid" x1="390" y1="108" x2="390" y2="272"/>
+    <line class="grid" x1="505" y1="108" x2="505" y2="272"/>
+    <line class="grid" x1="620" y1="108" x2="620" y2="272"/>
+    <line class="base" x1="160" y1="108" x2="160" y2="272"/>
+  </g>
+  <text class="tick" x="160" y="292">0%</text>
+  <text class="tick" x="275" y="292">25%</text>
+  <text class="tick" x="390" y="292">50%</text>
+  <text class="tick" x="505" y="292">75%</text>
+  <text class="tick" x="620" y="292">100%</text>
+
+  <text class="model" x="148" y="140">BERT-large</text>
+  <path class="s1" d="M160 116H614.62A4 4 0 0 1 618.62 120V130A4 4 0 0 1 614.62 134H160Z"/>
+  <path class="s2" d="M160 136H190.41A4 4 0 0 1 194.41 140V150A4 4 0 0 1 190.41 154H160Z"/>
+  <text class="val" x="624.62" y="129.5">99.70%</text>
+  <text class="val" x="200.41" y="149.5">7.48%</text>
+
+  <text class="model" x="148" y="196">RoBERTa-large</text>
+  <path class="s1" d="M160 172H614.8A4 4 0 0 1 618.8 176V186A4 4 0 0 1 614.8 190H160Z"/>
+  <path class="s2" d="M160 192H185.85A4 4 0 0 1 189.85 196V206A4 4 0 0 1 185.85 210H160Z"/>
+  <text class="val" x="624.8" y="185.5">99.74%</text>
+  <text class="val" x="195.85" y="205.5">6.49%</text>
+
+  <text class="model" x="148" y="252">Llama-3.2-1B</text>
+  <path class="s1" d="M160 228H616A4 4 0 0 1 620 232V242A4 4 0 0 1 616 246H160Z"/>
+  <path class="s2" d="M160 248H166.63A4 4 0 0 1 170.63 252V262A4 4 0 0 1 166.63 266H160Z"/>
+  <text class="val" x="626" y="241.5">100.0%</text>
+  <text class="val" x="176.63" y="261.5">2.31%</text>
+</svg>
