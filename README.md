@@ -134,6 +134,11 @@ repository, please cite their paper as well.
 
 LoRA, PiSSA, DoRA and OLoRA come from Hugging Face [PEFT](https://github.com/huggingface/peft).
 
+## License
+
+The code is released under the [MIT License](LICENSE). The license does not cover the datasets in `data/`, which come
+from [PSIM](https://github.com/shuaizhao95/PSIM) and remain under the terms of their original sources.
+
 ## Citation
 
 ```bibtex
