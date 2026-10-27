@@ -1,0 +1,7 @@
+# Tested with Python 3.12, torch 2.8.0 (CUDA 12.9), transformers 4.57.1, peft 0.12.0, datasets 4.2.0.
+# Install the torch build matching your CUDA version first: https://pytorch.org/get-started/locally/
+torch>=2.1
+transformers==4.57.1
+peft==0.12.0
+datasets==4.2.0
+tqdm
